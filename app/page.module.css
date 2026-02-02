@@ -1,0 +1,19 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 320px 1fr 400px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: 280px 1fr 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
